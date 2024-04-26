@@ -1,0 +1,37 @@
+AnchorPane
+{
+    -fx-background-color:#181823;
+}
+
+Label
+{
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-text-fill: #C0EEF2;
+}
+
+TextField {
+    -fx-background-color: #E9F8F9;
+}
+
+TextField:focused {
+    -fx-background-color: #E9F8F9 , white , white;
+}
+
+Button
+{
+    -fx-background-color: #B9EDDD;
+    -fx-border-style: none;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-size: 14px;
+    -fx-text-fill: #0B2447;
+}
+
+GridPane
+{
+    -fx-background-color:#212A3E;
+}
+
+.alert {
+    -fx-background-color: #181823;
+}

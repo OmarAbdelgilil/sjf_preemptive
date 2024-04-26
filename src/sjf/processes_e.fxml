@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sjf.processes_e_controller">
+   <children>
+      <ScrollPane layoutX="6.0" layoutY="46.0" prefHeight="137.0" prefWidth="538.0">
+         <content>
+            <GridPane fx:id="sjf_gr" prefHeight="120.0" prefWidth="568.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="9.0" layoutY="21.0" text="PROCESSES" />
+      <Label layoutX="88.0" layoutY="21.0" text="Arrival Time" />
+      <Label layoutX="174.0" layoutY="21.0" text="Burst Time" />
+      <Label layoutX="265.0" layoutY="21.0" text="Waiting Time" />
+      <Label layoutX="361.0" layoutY="21.0" text="Response Time" />
+      <Label layoutX="458.0" layoutY="21.0" text="Turn Around" />
+      <ScrollPane layoutX="14.0" layoutY="219.0" prefHeight="166.0" prefWidth="546.0">
+         <content>
+            <AnchorPane fx:id="gantt" prefHeight="150.0" prefWidth="547.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="43.0" layoutY="411.0" prefHeight="20.0" prefWidth="159.0" text="Average Waiting Time:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="413.0" prefHeight="20.0" prefWidth="177.0" text="Average Turnaround Time : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="avgW" layoutX="200.0" layoutY="414.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="avgT" layoutX="497.0" layoutY="414.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="280.0" layoutY="502.0" mnemonicParsing="false" onAction="#Ok" text="ok" />
+      <Label layoutX="207.0" layoutY="452.0" prefHeight="18.0" prefWidth="159.0" text="Average Response Time :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="avgR" layoutX="371.0" layoutY="454.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
